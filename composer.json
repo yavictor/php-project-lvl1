@@ -1,6 +1,10 @@
 {
     "name": "yv/php-project-lvl1",
+    "bin": [
+        "bin/brain-games"
+    ],
     "description": "console games",
+    "license": "MIT",
     "authors": [
         {
             "name": "yv",
