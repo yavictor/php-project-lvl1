@@ -5,6 +5,9 @@
     ],
     "description": "console games",
     "license": "MIT",
+    "scripts": {
+        "phpcs": "phpcs -- --standard=PSR12 src bin"
+    },
     "authors": [
         {
             "name": "yv",
@@ -16,5 +19,8 @@
     },
     "require": {
         "wp-cli/php-cli-tools" : "v0.11.11"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "3.*"
     }
 }
