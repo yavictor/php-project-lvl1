@@ -1,7 +1,8 @@
 {
     "name": "yv/php-project-lvl1",
     "bin": [
-        "bin/brain-games"
+        "bin/brain-games",
+        "bin/brain-even"
     ],
     "description": "console games",
     "license": "MIT",
@@ -15,7 +16,10 @@
         }
     ],
     "autoload": {
-        "files": ["src/Cli.php"]
+        "files": [
+            "src/Cli.php",
+            "src/Even.php"
+        ]
     },
     "require": {
         "wp-cli/php-cli-tools" : "v0.11.11"
