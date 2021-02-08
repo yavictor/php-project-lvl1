@@ -44,7 +44,7 @@ function even()
         $random = getRandom();
         line("Question: {$random}");
         $rightAnswer = isEven($random) ? 'yes' : 'no';
-        $answer = prompt('Your answer: ');
+        $answer = prompt('Your answer ');
         if ($rightAnswer === $answer) {
             line('Correct!');
             $rightCounter++;

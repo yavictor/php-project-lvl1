@@ -1,1 +1,15 @@
-#!/usr/bin/env php<?php$autoloadPath = __DIR__ . '/../vendor/autoload.php';if (file_exists($autoloadPath)) {    require_once $autoloadPath;}use function Brain\Games\Even\even;use function Brain\Games\Cli\run;//run();//askQuestion();even();
+#!/usr/bin/env php
+
+<?php
+
+$autoloadPath = __DIR__ . '/../vendor/autoload.php';
+if (file_exists($autoloadPath)) {
+    require_once $autoloadPath;
+}
+
+use function Brain\Games\Even\even;
+use function Brain\Games\Cli\run;
+
+//run();
+//askQuestion();
+even();
