@@ -47,7 +47,7 @@ function even()
         $answer = prompt('Your answer: ');
         if ($rightAnswer === $answer) {
             line('Correct!');
-            $rightCounter ++;
+            $rightCounter++;
         } else {
             line("'{$answer}' is wrong answer ;(. Correct answer was '{$rightAnswer}'.");
             return line("Let's try again, {$name}");
