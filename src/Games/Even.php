@@ -13,8 +13,7 @@ function isEven($num)
 
 function even()
 {
-    $getGameData = function()
-    {
+    $getGameData = function () {
         $question = rand(1, 100);
         $answer = isEven($question) ? 'yes' : 'no';
         return [$question, $answer];
@@ -22,4 +21,3 @@ function even()
 
     return run(DESCRIPTION, $getGameData);
 }
-

@@ -5,7 +5,6 @@ namespace Brain\Games\Engine;
 use function cli\line;
 use function cli\prompt;
 
-
 const STEPS_COUNT = 3;
 
 function run($gameDescription, $gameData)
