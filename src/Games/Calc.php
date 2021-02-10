@@ -10,7 +10,7 @@ const OPERATIONS = '+-*';
 
 function calculate(int $x, int $y, string $operation): int
 {
-    $result = null;
+    $result = 0;
     switch ($operation) {
         case '-':
             $result =  $x - $y;
