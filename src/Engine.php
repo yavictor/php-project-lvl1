@@ -20,7 +20,7 @@ function run($gameDescription, $gameData)
         $playerAnswer = prompt('Your answer ');
         if ($correctAnswer !== $playerAnswer) {
             line("'{$playerAnswer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'.");
-            return line("Let's try again, {$playerName}");
+            return line("Let's try again, {$playerName}!");
         }
         line('Correct!');
     }
