@@ -6,12 +6,12 @@ use function Brain\Games\Engine\run;
 
 const DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".';
 
-function isEven($num)
+function isEven($num): bool
 {
     return $num % 2 === 0;
 }
 
-function even()
+function even(): string
 {
     $getGameData = function () {
         $question = rand(1, 100);

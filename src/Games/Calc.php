@@ -8,7 +8,7 @@ const DESCRIPTION = 'What is the result of the expression?';
 
 const OPERATIONS = '+-*';
 
-function calculate($x, $y, $operation)
+function calculate($x, $y, $operation): int
 {
     switch ($operation) {
         case '-':
@@ -22,7 +22,7 @@ function calculate($x, $y, $operation)
     }
 }
 
-function calc()
+function calc(): string
 {
     $getGameData = function () {
         $a = rand(1, 30);

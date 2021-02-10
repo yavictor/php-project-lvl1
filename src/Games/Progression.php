@@ -8,7 +8,7 @@ const DESCRIPTION = 'What number is missing in the progression?';
 
 const LENGTH = 10;
 
-function createQuestion($start, $step, $missingIndex, $progressionLength)
+function createQuestion($start, $step, $missingIndex, $progressionLength): string
 {
     $progression = '';
     for ($i = 0; $i < $progressionLength; $i++) {
@@ -22,7 +22,7 @@ function createQuestion($start, $step, $missingIndex, $progressionLength)
     return trim($progression);
 }
 
-function progression()
+function progression(): string
 {
     $getGameData = function () {
         $init = rand(1, 30);
