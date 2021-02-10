@@ -7,7 +7,7 @@ use function cli\prompt;
 
 const STEPS_COUNT = 3;
 
-function run($gameDescription, $gameData): void
+function run(string $gameDescription, object $gameData): void
 {
     line('Welcome to the Brain Game!');
     line($gameDescription);
