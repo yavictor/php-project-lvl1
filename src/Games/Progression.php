@@ -22,7 +22,7 @@ function createQuestion($start, $step, $missingIndex, $progressionLength): strin
     return trim($progression);
 }
 
-function progression(): string
+function progression(): void
 {
     $getGameData = function () {
         $init = rand(1, 30);
@@ -33,5 +33,5 @@ function progression(): string
         return [$question, strval($answer)];
     };
 
-    return run(DESCRIPTION, $getGameData);
+    run(DESCRIPTION, $getGameData);
 }

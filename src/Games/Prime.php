@@ -19,7 +19,7 @@ function isPrime($number): bool
     return true;
 }
 
-function prime(): string
+function prime(): void
 {
     $getGameData = function () {
         $question = rand(1, 100);
@@ -27,5 +27,5 @@ function prime(): string
         return [$question, $answer];
     };
 
-    return run(DESCRIPTION, $getGameData);
+    run(DESCRIPTION, $getGameData);
 }

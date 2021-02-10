@@ -11,7 +11,7 @@ function isEven($num): bool
     return $num % 2 === 0;
 }
 
-function even(): string
+function even(): void
 {
     $getGameData = function () {
         $question = rand(1, 100);
@@ -19,5 +19,5 @@ function even(): string
         return [$question, $answer];
     };
 
-    return run(DESCRIPTION, $getGameData);
+    run(DESCRIPTION, $getGameData);
 }

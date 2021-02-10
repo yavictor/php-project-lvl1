@@ -16,7 +16,7 @@ function searchGcd($num1, $num2): int
     } return searchGcd($num2, ($num1 % $num2));
 }
 
-function gcd(): string
+function gcd(): void
 {
     $getGameData = function () {
         $number1 = rand(1, 100);
@@ -26,5 +26,5 @@ function gcd(): string
         return [$question, strval($answer)];
     };
 
-    return run(DESCRIPTION, $getGameData);
+    run(DESCRIPTION, $getGameData);
 }

@@ -22,7 +22,7 @@ function calculate($x, $y, $operation): int
     }
 }
 
-function calc(): string
+function calc(): void
 {
     $getGameData = function () {
         $a = rand(1, 30);
@@ -34,5 +34,5 @@ function calc(): string
         return [$question, strval($answer)];
     };
 
-    return run(DESCRIPTION, $getGameData);
+    run(DESCRIPTION, $getGameData);
 }
