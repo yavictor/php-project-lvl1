@@ -10,14 +10,19 @@ const OPERATIONS = '+-*';
 
 function calculate(int $x, int $y, string $operation): int
 {
+    $result = null;
     switch ($operation) {
         case '-':
-            return $x - $y;
+            $result =  $x - $y;
+            break;
         case '+':
-            return $x + $y;
+            $result = $x + $y;
+            break;
         case '*':
-            return $x * $y;
+            $result =  $x * $y;
+            break;
     }
+    return $result;
 }
 
 function calc(): void

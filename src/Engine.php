@@ -7,7 +7,7 @@ use function cli\prompt;
 
 const STEPS_COUNT = 3;
 
-function run(string $gameDescription, object $gameData): void
+function run(string $gameDescription, callable $gameData): mixed
 {
     line('Welcome to the Brain Game!');
     line($gameDescription);
@@ -20,10 +20,9 @@ function run(string $gameDescription, object $gameData): void
         $playerAnswer = prompt('Your answer ');
         if ($correctAnswer !== $playerAnswer) {
             line("'{$playerAnswer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'.");
-            line("Let's try again, {$playerName}!");
-            break;
+            return line("Let's try again, {$playerName}!");
         }
         line('Correct!');
     }
-    line("Congratulations, {$playerName}!");
+    return line("Congratulations, {$playerName}!");
 }
